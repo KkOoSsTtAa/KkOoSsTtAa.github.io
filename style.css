@@ -1,0 +1,129 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* 
+red rgba(254, 0, 2, 255);
+yellow rgba(255, 238, 2, 255);
+green rgba(153, 255, 3, 255);
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(./img/IMG-084798e7622c104c0c6d2cb23d829ae8-V.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.red {
+    margin: 0 auto;
+    /* max-width: 1500px; */
+    padding: 20px 150px;
+    
+}
+
+.logo {
+    width: 75px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.my-link {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.my-link:hover {
+    color: rgba(254, 0, 2, 255);
+    transform: scale(1.1);
+}
+
+.hero {
+    margin-top: 100px;
+    align-items: center;
+}
+
+.hero p {
+    color: rgba(254, 0, 2, 255);
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: rgba(255, 238, 2, 255);
+    font-size: 90px;
+    text-transform: uppercase;
+}
+
+h1 span {
+    color: rgba(254, 0, 2, 255)
+}
+
+.poruci {
+    background-color: transparent;
+    height: 75px;
+    width: 150px;
+    border: solid 5px rgba(153, 255, 3, 255);
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-right: 12px;
+    margin-left: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.app {
+    max-width: 90%;
+}
+
+.glovo {
+    margin-top: -10px;
+}
+
+.wolt {
+    max-width: 70%;
+}
+
+.popust {
+    background-color: rgba(254, 0, 2, 255);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.popust a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.poruci:hover {
+    border: solid 5px rgba(254, 0, 2, 255);
+}
+
+.poruci a:hover {
+    color: rgba(153, 255, 3, 255);
+}
+
+
+.collage {
+    /* margin-left: 100px; */
+    width: 500px;
+    transform: rotate(7deg);
+    transition: all 1s ease;
+}
+
+.collage:hover {
+    transform: rotate(-5deg);
+}
