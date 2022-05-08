@@ -14,6 +14,15 @@ green rgba(153, 255, 3, 255);
     font-family: 'Raleway', sans-serif;
 }
 
+.red {
+    margin: 0 auto;
+    /* max-width: 1500px; */
+    padding: 20px 150px;
+    
+}
+
+/* ***** HEADER ***** */
+
 header {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(./img/IMG-084798e7622c104c0c6d2cb23d829ae8-V.jpg) center;
     background-attachment: fixed;
@@ -23,64 +32,78 @@ header {
     overflow: hidden;
 }
 
-.red {
-    margin: 0 auto;
-    /* max-width: 1500px; */
-    padding: 20px 150px;
-    
-}
-
 .logo {
-    width: 75px;
+    width: 60px;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-.my-link {
+.links {
     color: white;
     font-weight: bold;
     font-size: 20px;
     transition: all 0.3s ease;
 }
 
-.my-link:hover {
+.links:hover,
+.links:active { 
     color: rgba(254, 0, 2, 255);
     transform: scale(1.1);
 }
 
 .hero {
-    margin-top: 100px;
-    align-items: center;
+    margin: 100px auto 0;
 }
 
-.hero p {
-    color: rgba(254, 0, 2, 255);
-    font-size: 20px;
+h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
 }
 
 h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
     color: rgba(255, 238, 2, 255);
+    margin-top: 100px;
+    font-weight: 700;
     font-size: 90px;
-    text-transform: uppercase;
+}
+
+h2 {
+    color: rgba(254, 0, 2, 255);
+    font-size: 50px;
+    text-align: center;
+    margin: 100px;
 }
 
 h1 span {
     color: rgba(254, 0, 2, 255)
 }
 
-.poruci {
+.button {
+    text-align: center;
+    text-decoration: none;
     background-color: transparent;
     height: 75px;
     width: 150px;
     border: solid 5px rgba(153, 255, 3, 255);
     border-radius: 15px;
-    margin-top: 20px;
-    margin-right: 12px;
-    margin-left: 12px;
-    position: relative;
+    margin: 20px 12px 12px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
     transition: all 0.3s ease;
+}
+
+.button:hover {
+    border: solid 5px rgba(254, 0, 2, 255);
+    color: rgba(153, 255, 3, 255);
+    transform: scale(1.1);
+    background-color: transparent;
+    
+}
+
+.button-red {
+    padding-top: 3px;
+    background-color: rgba(254, 0, 2, 255);
 }
 
 .app {
@@ -88,37 +111,16 @@ h1 span {
 }
 
 .glovo {
-    margin-top: -10px;
+    padding-top: 10px;
 }
 
 .wolt {
     max-width: 70%;
+    padding-top: 15px;
 }
-
-.popust {
-    background-color: rgba(254, 0, 2, 255);
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.popust a {
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.poruci:hover {
-    border: solid 5px rgba(254, 0, 2, 255);
-}
-
-.poruci a:hover {
-    color: rgba(153, 255, 3, 255);
-}
-
 
 .collage {
-    /* margin-left: 100px; */
+    
     width: 500px;
     transform: rotate(7deg);
     transition: all 1s ease;
@@ -126,4 +128,17 @@ h1 span {
 
 .collage:hover {
     transform: rotate(-5deg);
+}
+
+.meni {
+    height: 1000px;
+    padding-top: 80px;
+}
+
+.btn-primary {
+    background: rgba(254, 0, 2, 255);
+}
+
+.bg-primary {
+    background: rgba(254, 0, 2, 255) !important;
 }
