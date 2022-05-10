@@ -27,9 +27,9 @@ header {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(./img/IMG-084798e7622c104c0c6d2cb23d829ae8-V.jpg) center;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
-    max-width: 100vw;
     overflow: hidden;
+    height: 100vh;
+    /* max-width: 100vw; */
 }
 
 .logo {
@@ -61,32 +61,32 @@ h1, h2, h3 {
 }
 
 h1 {
-    color: rgba(255, 238, 2, 255);
+    color: yellow;
     margin-top: 100px;
     font-weight: 700;
     font-size: 90px;
 }
 
 h2 {
-    color: rgba(254, 0, 2, 255);
+    color: red;
     font-size: 50px;
     text-align: center;
     margin: 100px;
 }
 
 h1 span {
-    color: rgba(254, 0, 2, 255)
+    color: red;
 }
 
 h3 {
- color: rgba(255, 238, 2, 255);
+ color: red;
 }
 
 .button {
     text-align: center;
     text-decoration: none;
     background-color: transparent;
-    border: solid 5px rgba(153, 255, 3, 255);
+    border: solid 5px yellow;
     border-radius: 30px;
     font-weight: bold;
     color: white;
@@ -98,7 +98,6 @@ h3 {
     height: 75px;
     width: 150px;
     margin: 20px 12px 12px;
-    
 }
 
 .button-small {
@@ -106,26 +105,21 @@ h3 {
 }
 
 .button:hover {
-    border: solid 5px rgba(254, 0, 2, 255);
+    border: solid 5px red;
     transform: scale(1.1);
     background-color: transparent;
+    color: red;
 }
 
 .button-big:hover {
-    color: rgba(153, 255, 3, 255);
+    color: yellow;
     
-}
-
-.button-small:hover {
-    color: rgba(254, 0, 2, 255);
-
 }
 
 .button-red {
     padding-top: 3px;
-    background-color: rgba(254, 0, 2, 255);
+    background-color: red;
 }
-
 
 .app {
     max-width: 90%;
@@ -141,7 +135,6 @@ h3 {
 }
 
 .collage {
-    
     width: 500px;
     transform: rotate(7deg);
     transition: all 1s ease;
@@ -157,9 +150,16 @@ h3 {
     background: rgb(228, 228, 228);
 }
 
+.meni img {
+    transition: all 0.3s ease;
+}
+
+.meni img:hover {
+    transform: scale(1.2);
+}
 
 .small-badge {
-    background: rgba(254, 0, 2, 255) !important;
+    background: red !important;
 }
 
 /* .visakB {
@@ -182,6 +182,10 @@ h3 {
 
 .o-nama {
     /* height: 1000px; */
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url("./img2/2789340012388439462.jpg") center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
     padding-bottom: 100px;
 }
 
@@ -193,9 +197,15 @@ h3 {
     color: rgba(255, 238, 2, 255);
 }
 
+.o-nama h2 {
+    color: yellow;
+}
+
 .o-nama p {
     font-size: 20px;
     font-weight: 500;
+    color: white;
+    font-weight: 600;
 }
 .o-nama .col {
     padding-left: 20px;
