@@ -55,7 +55,7 @@ header {
     margin: 100px auto 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
 }
@@ -78,33 +78,54 @@ h1 span {
     color: rgba(254, 0, 2, 255)
 }
 
+h3 {
+ color: rgba(255, 238, 2, 255);
+}
+
 .button {
     text-align: center;
     text-decoration: none;
     background-color: transparent;
-    height: 75px;
-    width: 150px;
     border: solid 5px rgba(153, 255, 3, 255);
-    border-radius: 15px;
-    margin: 20px 12px 12px;
+    border-radius: 30px;
     font-weight: bold;
     color: white;
-    font-size: 18px;
     transition: all 0.3s ease;
+}
+
+.button-big {
+    font-size: 18px;
+    height: 75px;
+    width: 150px;
+    margin: 20px 12px 12px;
+    
+}
+
+.button-small {
+    color: rgba(254, 0, 2, 255);
 }
 
 .button:hover {
     border: solid 5px rgba(254, 0, 2, 255);
-    color: rgba(153, 255, 3, 255);
     transform: scale(1.1);
     background-color: transparent;
+}
+
+.button-big:hover {
+    color: rgba(153, 255, 3, 255);
     
+}
+
+.button-small:hover {
+    color: rgba(254, 0, 2, 255);
+
 }
 
 .button-red {
     padding-top: 3px;
     background-color: rgba(254, 0, 2, 255);
 }
+
 
 .app {
     max-width: 90%;
@@ -131,14 +152,67 @@ h1 span {
 }
 
 .meni {
-    height: 1000px;
     padding-top: 80px;
+    padding-bottom: 100px;
+    background: rgb(228, 228, 228);
 }
 
-.btn-primary {
-    background: rgba(254, 0, 2, 255);
-}
 
-.bg-primary {
+.small-badge {
     background: rgba(254, 0, 2, 255) !important;
+}
+
+/* .visakB {
+    transition: all 1s ease;
+} */
+
+.hidden {
+    display: none !important;
+    /* transition: all 1s ease; */
+}
+
+.ceo-meni {
+    padding-top: 60px;
+    text-transform: uppercase;
+}
+
+.ceo-meni a {
+    font-size: 25px;
+}
+
+.o-nama {
+    /* height: 1000px; */
+    padding-bottom: 100px;
+}
+
+.icon {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    color: rgba(255, 238, 2, 255);
+}
+
+.o-nama p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.o-nama .col {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.kontakt {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: rgb(228, 228, 228);
+}
+
+.formica {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.icon-footer {
+    font-size: 34px;
 }
