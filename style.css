@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 
 /* 
 red rgba(254, 0, 2, 255);
@@ -8,221 +8,503 @@ green rgba(153, 255, 3, 255);
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 .red {
-    margin: 0 auto;
-    /* max-width: 1500px; */
-    padding: 20px 150px;
-    
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* ***** HEADER ***** */
 
-header {
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(./img/IMG-084798e7622c104c0c6d2cb23d829ae8-V.jpg) center;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: hidden;
-    height: 100vh;
-    /* max-width: 100vw; */
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url(./img/IMG-084798e7622c104c0c6d2cb23d829ae8-V.jpg) center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 20px 35px 50px;
+  position: relative;
+}
+
+.sticky {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .logo {
-    width: 60px;
-    border-radius: 5px;
-    margin-top: 10px;
+  width: 60px;
+  border-radius: 5px;
 }
 
 .links {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: all 0.3s ease;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s ease;
 }
 
 .links:hover,
-.links:active { 
-    color: rgba(254, 0, 2, 255);
-    transform: scale(1.1);
+.links:active {
+  color: rgba(254, 0, 2, 255);
+  transform: scale(1.1);
+}
+
+.burger-menu {
+  display: none;
+  z-index: 2;
+}
+
+.burger-menu img {
+  width: 70px;
+}
+
+.nav-mobile {
+  display: block !important;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.9);
+  width: 66vw;
+  height: 100vh;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  z-index: 1;
+  border-end-start-radius: 30px;
+  border-top-left-radius: 30px;
+  position: fixed;
+  padding-top: 70px;
+}
+
+.nav-mobile li a {
+  font-size: 33px;
+  margin-top: 40px;
 }
 
 .hero {
-    margin: 100px auto 0;
+  margin: 100px auto 0;
+  justify-content: space-around;
 }
 
-h1, h2, h3 {
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
 }
 
 h1 {
-    color: yellow;
-    margin-top: 100px;
-    font-weight: 700;
-    font-size: 90px;
+  color: yellow;
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 90px;
 }
 
 h2 {
-    color: red;
-    font-size: 50px;
-    text-align: center;
-    margin: 100px;
+  color: red;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px 0;
 }
 
 h1 span {
-    color: red;
+  color: red;
 }
 
 h3 {
- color: red;
+  color: red;
 }
 
 .button {
-    text-align: center;
-    text-decoration: none;
-    background-color: transparent;
-    border: solid 5px yellow;
-    border-radius: 30px;
-    font-weight: bold;
-    color: white;
-    transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border: solid 5px yellow;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
 }
 
 .button-big {
-    font-size: 18px;
-    height: 75px;
-    width: 150px;
-    margin: 20px 12px 12px;
+  font-size: 18px;
+  height: 75px;
+  width: 150px;
+  margin: 20px 12px 12px;
 }
 
 .button-small {
-    color: rgba(254, 0, 2, 255);
+  color: rgba(254, 0, 2, 255);
+  margin-top: 10px;
 }
 
 .button:hover {
-    border: solid 5px red;
-    transform: scale(1.1);
-    background-color: transparent;
-    color: red;
+  border: solid 5px red;
+  transform: scale(1.1);
+  background-color: transparent;
+  color: red;
 }
 
 .button-big:hover {
-    color: yellow;
-    
+  color: yellow;
 }
 
 .button-red {
-    padding-top: 3px;
-    background-color: red;
+  padding-top: 3px;
+  background-color: red;
 }
 
 .app {
-    max-width: 90%;
+  max-width: 90%;
 }
 
 .glovo {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .wolt {
-    max-width: 70%;
-    padding-top: 15px;
+  max-width: 70%;
+  padding-top: 15px;
 }
 
 .collage {
-    width: 500px;
-    transform: rotate(7deg);
-    transition: all 1s ease;
+  width: 500px;
+  transform: rotate(7deg);
+  transition: all 1s ease;
 }
 
 .collage:hover {
-    transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
 .meni {
-    padding-top: 80px;
-    padding-bottom: 100px;
-    background: rgb(228, 228, 228);
+  padding-bottom: 100px;
+  background: rgb(228, 228, 228);
 }
 
-.meni img {
-    transition: all 0.3s ease;
+.meni-kartice {
+  justify-content: space-around;
+  align-items: baseline;
 }
 
-.meni img:hover {
-    transform: scale(1.2);
+.card {
+  width: 300px;
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: scale(1.15);
 }
 
 .small-badge {
-    background: red !important;
+  background: red !important;
 }
 
-/* .visakB {
-    transition: all 1s ease;
-} */
-
 .hidden {
-    display: none !important;
-    /* transition: all 1s ease; */
+  display: none !important;
 }
 
 .ceo-meni {
-    padding-top: 60px;
-    text-transform: uppercase;
+  margin-top: 60px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
 .ceo-meni a {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .o-nama {
-    /* height: 1000px; */
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url("./img2/2789340012388439462.jpg") center;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: hidden;
-    padding-bottom: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url("./img2/2789340012388439462.jpg") center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.o-nama-red {
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.o-nama-kartica {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.07)
+  );
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  width: 378px;
 }
 
 .icon {
-    color: black;
-    font-size: 60px;
-    margin-bottom: 20px;
-    margin-left: 40%;
-    color: rgba(255, 238, 2, 255);
+  color: black;
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-left: 40%;
+  color: rgba(255, 238, 2, 255);
 }
 
 .o-nama h2 {
-    color: yellow;
+  color: yellow;
 }
 
 .o-nama p {
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    font-weight: 600;
-}
-.o-nama .col {
-    padding-left: 20px;
-    padding-right: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  font-weight: 600;
 }
 
 .kontakt {
-    padding-top: 80px;
-    padding-bottom: 100px;
-    background: rgb(228, 228, 228);
+  padding-bottom: 100px;
+  background: rgb(228, 228, 228);
 }
 
 .formica {
-    margin: 0 auto;
-    max-width: 60%;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 50px;
+}
+
+.formica .form-label {
+  font-size: 130%;
+}
+
+.formica input {
+  margin-bottom: 10px;
+}
+
+.formica textarea {
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+
+#emailHelp {
+  font-size: 80%;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .icon-footer {
-    font-size: 34px;
+  font-size: 34px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 68px;
+  }
+
+  .button-big {
+    width: 120px;
+  }
+  .glovo {
+    padding-top: 15px;
+  }
+  .wolt {
+    padding-top: 18px;
+  }
+
+  .collage {
+    width: 450px;
+    margin-top: 50px;
+  }
+
+  h2 {
+    padding: 50px 0;
+  }
+
+  .meni {
+    padding-bottom: 50px;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .ceo-meni {
+    margin-top: 40px;
+  }
+
+  .o-nama {
+    padding-bottom: 50px;
+  }
+
+  .o-nama-kartica {
+    width: 420px;
+  }
+
+  .kontakt {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 90px;
+  }
+
+  .button-big {
+    width: 150px;
+  }
+  .glovo {
+    padding-top: 10px;
+  }
+  .wolt {
+    padding-top: 15px;
+  }
+
+  .collage {
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    width: 350px;
+  }
+
+  .o-nama {
+    padding-bottom: 0px;
+  }
+
+  .o-nama-kartica {
+    width: 500px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .links {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 68px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .button-big {
+    width: 120px;
+  }
+  .glovo {
+    padding-top: 15px;
+  }
+  .wolt {
+    padding-top: 18px;
+  }
+
+  .collage {
+    width: 450px;
+    margin-top: 100px;
+  }
+  .card {
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: 15px 5px;
+  }
+
+  h1 {
+    margin-top: 0px;
+    font-size: 55px;
+  }
+
+  .button-big {
+    font-size: 13px;
+    height: 55px;
+    width: 100px;
+    margin: 15px 5px 10px;
+  }
+
+  .glovo {
+    padding-top: 8px;
+  }
+
+  .wolt {
+    padding-top: 12px;
+  }
+
+  .collage {
+    width: 330px;
+  }
+
+  .card {
+    width: 310px;
+  }
 }

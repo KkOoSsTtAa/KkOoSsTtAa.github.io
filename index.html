@@ -16,14 +16,16 @@
 <body>
 
     <!-- ***** HEADER ***** -->
-    <header id="Pocetna">
+    <section class="header" id="Pocetna">
+
         <!-- ***** NAV BAR ***** -->
-        <div class="row red">
-            <div class="col">
-                <img src="./img2/logo.png" alt="logo" class="logo">
-            </div>
-            <div class="col">
-                <ul class="nav justify-content-end">
+        <header id="header">
+            <div class="red">
+
+                <a href="#Pocetna">
+                    <img src="./img2/logo.png" alt="logo" class="logo">
+                </a>
+                <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link links" href="#Pocetna">Početna</a>
                     </li>
@@ -34,395 +36,360 @@
                         <a class="nav-link links" href="#O_nama">O nama</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links" href="#Kontakt">Kontaktiraj nas</a>
+                        <a class="nav-link links" href="#Kontakt">Kontaktirajte nas</a>
                     </li>
                 </ul>
+                <a href="#" class="burger-menu"><img src="img/burger.png" alt="menu-icon"></a>
             </div>
-        </div>
+        </header>
+
+
         <!-- ***** HERO ***** -->
-        <section class="container hero row">
-            <div class="col">
+        <section class="hero red">
+            <div>
                 <h1>
                     chicken & <br> <span>burger</span> bar
                 </h1>
                 <!-- ***** BIG BUTTONS ***** -->
                 <div class="row">
-                    <a class="button button-red button-big" href="#">Poruči sa popustom</a>
+                    <a class="button button-red button-big" id="poruci" href="#">Poruči sa popustom</a>
                     <a class="button button-big" href="https://glovoapp.com/rs/en/nis/chicken-and-burgerbar/"
                         target=”_blank”><img src="./img/glovo.png" class="app glovo" alt="glovo_app"></a>
                     <a class="button button-big" href="https://wolt.com/en/srb/nis/restaurant/chicken-burger-bar"
                         target=”_blank”><img src="./img/wolt.png" class="app wolt" alt="wolt_app"></a>
                 </div>
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Hranu možete poručiti pozivom na broj: 061/250-50-51</h3>
+                        <p>Radno vreme radnim danima 10:00-00:00, subotom 10:00-01:00.</p>
+                    </div>
+
+                </div>
             </div>
             <!-- ***** COLLAGE ***** -->
-            <div class="col">
+            <div>
                 <img src="./img/collage (1).jpg" alt="collage" class="collage">
             </div>
         </section>
-    </header>
+    </section>
+    <!-- END OF HEADER -->
+
     <!-- ***** MENI ***** -->
     <div class="meni">
-        <section class="container">
-            <!-- ***** IZ PONUDE IZDVAJAMO ***** -->
-            <h2 id="Meni" >Iz ponude izdvajamo</h2>
-            <div class="container">
-                <div class="row align-items-start">
 
-                    <!-- ***** BURGERI ***** -->
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img\IMG-c0964abf0bd1cb12b27de2c23ffc77d8-V.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h3 class="card-title">Burgeri</h3>
-                                <p class="card-text">
-                                <ul class="list-group">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Standard beef burger
-                                        <span class="badge bg-primary rounded-pill small-badge">410</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Extra chees and bacon
-                                        <span class="badge bg-primary rounded-pill small-badge">460</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Chicken burger
-                                        <span class="badge bg-primary rounded-pill small-badge">370</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Mother burger
-                                        <span class="badge bg-primary rounded-pill small-badge">590</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
-                                        Pikant Chorizo burger
-                                        <span class="badge bg-primary rounded-pill small-badge">430</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
-                                        Fit chicken burger
-                                        <span class="badge bg-primary rounded-pill small-badge">410</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
-                                        Zlatiborski burger
-                                        <span class="badge bg-primary rounded-pill small-badge">530</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
-                                        Grcki burger
-                                        <span class="badge bg-primary rounded-pill small-badge">450</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
-                                        4 vrste sira burger
-                                        <span class="badge bg-primary rounded-pill small-badge">530</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
-                                        Pizza burger
-                                        <span class="badge bg-primary rounded-pill small-badge">430</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
-                                        Mini standard burgers 4x
-                                        <span class="badge bg-primary rounded-pill small-badge">480</span>
-                                    </li>
-                                </ul>
-                                </p>
-                                <a href="#" id="burgeri" class="btn  button-small button">Svi burgeri</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ***** KRILCA ***** -->
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img2\small-2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h3 class="card-title">Krilca</h3>
-                                <p class="card-text">
-                                <ul class="list-group">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Epic krilca 1kg
-                                        <span class="badge bg-primary rounded-pill small-badge">780</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Epic chilli krilca 1kg
-                                        <span class="badge bg-primary rounded-pill small-badge">780</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        BBQ krilca 1kg
-                                        <span class="badge bg-primary rounded-pill small-badge">800</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Krilca u kari sosu 1kg
-                                        <span class="badge bg-primary rounded-pill small-badge">820</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Garlic krilca 1kg
-                                        <span class="badge bg-primary rounded-pill small-badge">800</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        Krilca parmezan 1kg
-                                        <span class="badge bg-primary rounded-pill small-badge">820</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        Lemon pepper krilca 1kg
-                                        <span class="badge bg-primary rounded-pill small-badge">780</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        Epic krilca 0.5kg
-                                        <span class="badge bg-primary rounded-pill small-badge">430</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        Epic chilli krilca 0.5kg
-                                        <span class="badge bg-primary rounded-pill small-badge">430</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        BBQ krilca 0.5kg
-                                        <span class="badge bg-primary rounded-pill small-badge">440</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        Krilca u kari sosu 0.5kg
-                                        <span class="badge bg-primary rounded-pill small-badge">450</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        Garlic krilca 0.5kg
-                                        <span class="badge bg-primary rounded-pill small-badge">440</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        Krilca parmezan 0.5kg
-                                        <span class="badge bg-primary rounded-pill small-badge">450</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
-                                        Lemon pepper krilca 0.5kg
-                                        <span class="badge bg-primary rounded-pill small-badge">430</span>
-                                    </li>
-                                </ul>
-                                </p>
-                                <a href="#" id="krilca" class="btn button-small button">Sva krilca</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ***** PILETINA ***** -->
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img2\food-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h3 class="card-title">Piletina</h3>
-                                <p class="card-text">
-                                <ul class="list-group">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Epic pil. stapici 400gr
-                                        <span class="badge bg-primary rounded-pill small-badge">500</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Epic chilli pil. stapici 400gr
-                                        <span class="badge bg-primary rounded-pill small-badge">500</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Susam pil. stapici 400gr
-                                        <span class="badge bg-primary rounded-pill small-badge">510</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Crispy pil. stapici 400gr
-                                        <span class="badge bg-primary rounded-pill small-badge">510</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Softy pil. stapici 400gr
-                                        <span class="badge bg-primary rounded-pill small-badge">500</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Parmezan pil. stapici 400gr
-                                        <span class="badge bg-primary rounded-pill small-badge">510</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Sa semenkama i suncokretom 400gr
-                                        <span class="badge bg-primary rounded-pill small-badge">530</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Epic pil. stapici 250gr
-                                        <span class="badge bg-primary rounded-pill small-badge">380</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Epic chilli pil. stapici 250gr
-                                        <span class="badge bg-primary rounded-pill small-badge">380</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Susam pil. stapici 250gr
-                                        <span class="badge bg-primary rounded-pill small-badge">310</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Crispy pil. stapici 250gr
-                                        <span class="badge bg-primary rounded-pill small-badge">310</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Softy pil. stapici 250gr
-                                        <span class="badge bg-primary rounded-pill small-badge">300</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Parmezan pil. stapici 250gr
-                                        <span class="badge bg-primary rounded-pill small-badge">310</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
-                                        Sa semenkama i suncokretom 250gr
-                                        <span class="badge bg-primary rounded-pill small-badge">330</span>
-                                    </li>
-                                </ul>
-                                </p>
-                                <a href="#" id="piletina" class="btn button-small button">Sva piletina</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ***** SLATKISI ***** -->
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img\IMG_20220316_143432_331.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h3 class="card-title">Americke palacinke</h3>
-                                <p class="card-text">
-                                <ul class="list-group">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        krem, plazma, banana
-                                        <span class="badge bg-primary rounded-pill small-badge">330</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        puter, jav.sirup, vocni mix
-                                        <span class="badge bg-primary rounded-pill small-badge">350</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Mini americke - krem, plazma, banana
-                                        <span class="badge bg-primary rounded-pill small-badge">280</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Mini americke - puter, jav.sirup, vocni mix
-                                        <span class="badge bg-primary rounded-pill small-badge">290</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakS hidden">
-                                        Vafl - krem, plazma, banana
-                                        <span class="badge bg-primary rounded-pill small-badge">300</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakS hidden">
-                                        Vafl - puter, jav. sirup, vocni mix
-                                        <span class="badge bg-primary rounded-pill small-badge">330</span>
-                                    </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center visakS hidden">
-                                        Vafl - dzem, vocni mix
-                                        <span class="badge bg-primary rounded-pill small-badge">290</span>
-                                    </li>
-                                </ul>
-                                </p>
-                                <a href="#" id="slatkisi" class="btn button-small button">Svi slatkisi</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ***** END OF SLATKISI ***** -->
-
-                </div>
-
-            </div>
-            <center>
-                <div class="ceo-meni">
-                    <a href="#" class="button btn button-red">ceo meni</a>
-                </div>
-            </center>
-        </section>
-    </div>
-    <div id="O_nama"  class="o-nama">
-        <section class="container">
-            <h2>ko smo mi?</h2>
-            <div class="row">
-                <div class="col">
-                    <i class="las la-hamburger icon"></i>
-                    <p>Mi na prirodan i zdrav nacin pripremamo lokalnu i inostranu hranu visokog kvaliteta. Trudimo se
-                        da korisnicima pruzimo najraznovrsnije i najtrazenije proizvode.</p>
-                </div>
-                <div class="col">
-                    <i class="las la-car-side icon"></i>
-                    <p>Vrsimo besplatnu dostavu na celoj teritoriji grada Nisa. Nasa dostava ima vrhunsku saradnju sa
-                        kuhinjom da bi nasim korisnicima svaki obrok stigao topao i sto pre.</p>
-                </div>
-                <div class="col">
-                    <i class="las la-city icon"></i>
-                    <p>Mi smo privatno lokalno preduzece koje cine mladi vredni ljudi. Nas cilj je da kvalitetom
-                        gradimo bazu nasih korisnika i da svaki nas korisnik bude zadovoljan uslugom.</p>
+        <!-- ***** IZ PONUDE IZDVAJAMO ***** -->
+        <h2 id="Meni">Iz ponude izdvajamo</h2>
+        <div class="meni-kartice red">
+            <!-- ***** BURGERI ***** -->
+            <div class="card">
+                <img src="img\IMG-c0964abf0bd1cb12b27de2c23ffc77d8-V.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Burgeri</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Standard beef burger
+                            <span class="badge bg-primary rounded-pill small-badge">410</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Extra chees and bacon
+                            <span class="badge bg-primary rounded-pill small-badge">460</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Chicken burger
+                            <span class="badge bg-primary rounded-pill small-badge">370</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Mother burger
+                            <span class="badge bg-primary rounded-pill small-badge">590</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
+                            Pikant Chorizo burger
+                            <span class="badge bg-primary rounded-pill small-badge">430</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
+                            Fit chicken burger
+                            <span class="badge bg-primary rounded-pill small-badge">410</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
+                            Zlatiborski burger
+                            <span class="badge bg-primary rounded-pill small-badge">530</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
+                            Grcki burger
+                            <span class="badge bg-primary rounded-pill small-badge">450</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
+                            4 vrste sira burger
+                            <span class="badge bg-primary rounded-pill small-badge">530</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
+                            Pizza burger
+                            <span class="badge bg-primary rounded-pill small-badge">430</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakB hidden">
+                            Mini standard burgers 4x
+                            <span class="badge bg-primary rounded-pill small-badge">480</span>
+                        </li>
+                    </ul>
+                    <a href="#" id="burgeri" class="btn  button-small button">Svi burgeri</a>
                 </div>
             </div>
-        </section>
+
+            <!-- ***** KRILCA ***** -->
+
+            <div class="card">
+                <img src="img2\small-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Krilca</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Epic krilca 1kg
+                            <span class="badge bg-primary rounded-pill small-badge">780</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Epic chilli krilca 1kg
+                            <span class="badge bg-primary rounded-pill small-badge">780</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            BBQ krilca 1kg
+                            <span class="badge bg-primary rounded-pill small-badge">800</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Krilca u kari sosu 1kg
+                            <span class="badge bg-primary rounded-pill small-badge">820</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Garlic krilca 1kg
+                            <span class="badge bg-primary rounded-pill small-badge">800</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            Krilca parmezan 1kg
+                            <span class="badge bg-primary rounded-pill small-badge">820</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            Lemon pepper krilca 1kg
+                            <span class="badge bg-primary rounded-pill small-badge">780</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            Epic krilca 0.5kg
+                            <span class="badge bg-primary rounded-pill small-badge">430</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            Epic chilli krilca 0.5kg
+                            <span class="badge bg-primary rounded-pill small-badge">430</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            BBQ krilca 0.5kg
+                            <span class="badge bg-primary rounded-pill small-badge">440</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            Krilca u kari sosu 0.5kg
+                            <span class="badge bg-primary rounded-pill small-badge">450</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            Garlic krilca 0.5kg
+                            <span class="badge bg-primary rounded-pill small-badge">440</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            Krilca parmezan 0.5kg
+                            <span class="badge bg-primary rounded-pill small-badge">450</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakK hidden">
+                            Lemon pepper krilca 0.5kg
+                            <span class="badge bg-primary rounded-pill small-badge">430</span>
+                        </li>
+                    </ul>
+                    <a href="#" id="krilca" class="btn button-small button">Sva krilca</a>
+                </div>
+            </div>
+
+            <!-- ***** PILETINA ***** -->
+
+            <div class="card">
+                <img src="img2\food-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Piletina</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Epic pil. stapici 400gr
+                            <span class="badge bg-primary rounded-pill small-badge">500</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Epic chilli pil. stapici 400gr
+                            <span class="badge bg-primary rounded-pill small-badge">500</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Susam pil. stapici 400gr
+                            <span class="badge bg-primary rounded-pill small-badge">510</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Crispy pil. stapici 400gr
+                            <span class="badge bg-primary rounded-pill small-badge">510</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Softy pil. stapici 400gr
+                            <span class="badge bg-primary rounded-pill small-badge">500</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Parmezan pil. stapici 400gr
+                            <span class="badge bg-primary rounded-pill small-badge">510</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Sa semenkama i suncokretom 400gr
+                            <span class="badge bg-primary rounded-pill small-badge">530</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Epic pil. stapici 250gr
+                            <span class="badge bg-primary rounded-pill small-badge">380</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Epic chilli pil. stapici 250gr
+                            <span class="badge bg-primary rounded-pill small-badge">380</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Susam pil. stapici 250gr
+                            <span class="badge bg-primary rounded-pill small-badge">310</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Crispy pil. stapici 250gr
+                            <span class="badge bg-primary rounded-pill small-badge">310</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Softy pil. stapici 250gr
+                            <span class="badge bg-primary rounded-pill small-badge">300</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Parmezan pil. stapici 250gr
+                            <span class="badge bg-primary rounded-pill small-badge">310</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakP hidden">
+                            Sa semenkama i suncokretom 250gr
+                            <span class="badge bg-primary rounded-pill small-badge">330</span>
+                        </li>
+                    </ul>
+                    <a href="#" id="piletina" class="btn button-small button">Sva piletina</a>
+                </div>
+            </div>
+
+            <!-- ***** SLATKISI ***** -->
+
+            <div class="card">
+                <img src="img\IMG_20220316_143432_331.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Americke palacinke</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            krem, plazma, banana
+                            <span class="badge bg-primary rounded-pill small-badge">330</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            puter, jav.sirup, vocni mix
+                            <span class="badge bg-primary rounded-pill small-badge">350</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Mini americke - krem, plazma, banana
+                            <span class="badge bg-primary rounded-pill small-badge">280</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Mini americke - puter, jav.sirup, vocni mix
+                            <span class="badge bg-primary rounded-pill small-badge">290</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakS hidden">
+                            Vafl - krem, plazma, banana
+                            <span class="badge bg-primary rounded-pill small-badge">300</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakS hidden">
+                            Vafl - puter, jav. sirup, vocni mix
+                            <span class="badge bg-primary rounded-pill small-badge">330</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center visakS hidden">
+                            Vafl - dzem, vocni mix
+                            <span class="badge bg-primary rounded-pill small-badge">290</span>
+                        </li>
+                    </ul>
+                    <a href="#" id="slatkisi" class="btn button-small button">Svi slatkisi</a>
+                </div>
+            </div>
+            <!-- ***** END OF SLATKISI ***** -->
+
+        </div>
+        <!-- END OF IZ PONUDE IZDVAJAMO -->
+
+        <div class="ceo-meni">
+            <a href="https://www.instagram.com/chickenburgerbar_/" target="_blank" class="button btn button-red">ceo
+                meni</a>
+        </div>
     </div>
+    <!-- END OF MENI -->
+
+    <!-- O NAMA -->
+    <div id="O_nama" class="o-nama">
+        <h2>ko smo mi?</h2>
+        <div class="red o-nama-red">
+            <div class="o-nama-kartica">
+                <i class="las la-hamburger icon"></i>
+                <p>Mi na prirodan i zdrav nacin pripremamo lokalnu i inostranu hranu visokog kvaliteta. Trudimo
+                    se
+                    da korisnicima pruzimo najraznovrsnije i najtrazenije proizvode.</p>
+            </div>
+            <div class="o-nama-kartica">
+                <i class="las la-car-side icon"></i>
+                <p>Vrsimo besplatnu dostavu na celoj teritoriji grada Nisa. Nasa dostava ima vrhunsku saradnju
+                    sa
+                    kuhinjom da bi nasim korisnicima svaki obrok stigao topao i sto pre.</p>
+            </div>
+            <div class="o-nama-kartica">
+                <i class="las la-city icon"></i>
+                <p>Mi smo privatno lokalno preduzece koje cine mladi vredni ljudi. Nas cilj je da kvalitetom
+                    gradimo bazu nasih korisnika i da svaki nas korisnik bude zadovoljan uslugom.</p>
+            </div>
+        </div>
+    </div>
+    <!-- END OF O NAMA -->
+
+    <!-- KONTAKT -->
     <div class="kontakt">
-        <section class="container">
-            <h2 id="Kontakt">kontaktirajte nas</h2>
-            <form class="formica">
-                <div class="mb-3">
-                    <label class="form-label">Ime*</label>
-                    <input type="text" aria-label="First name" class="form-control" required>
-                    <label for="exampleInputEmail1" class="form-label">Email adresa</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Email adresa nije obavezna</div>
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Zelim da primam obavestenja o buducim popustima</label>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Vasa poruka nama*</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="button btn button-red">Posalji</button>
-            </form>
-        </section>
+        <h2 id="Kontakt">kontaktirajte nas</h2>
+        <form class="formica">
+            <label class="form-label">Ime*</label>
+            <input type="text" aria-label="First name" class="form-control" required>
+            <label for="exampleInputEmail1" class="form-label">Email adresa</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Email adresa nije obavezna</div>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Želim da primam obaveštenja o budućim
+                akcijama</label>
+            <br>
+            <label for="exampleFormControlTextarea1" class="form-label">Vaša poruka nama*</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+            <button type="submit" class="button btn button-red">Pošalji</button>
+        </form>
     </div>
+    <!-- END OF KONTAKT -->
 
     <!-- ***** FOOTER ***** -->
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <span class="text-muted">© 2022 Chicken&Burger Bar</span>
-            </div>
-    
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/chickenburgerbar_/" target="_blank">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top red">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="text-muted">© 2022 Chicken&Burger Bar</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/chickenburgerbar_/" target="_blank">
                     <i class="lab la-instagram icon-footer"></i>
                 </a></li>
-                <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/Chickenburgerbar" target="_blank">
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/Chickenburgerbar" target="_blank">
                     <i class="lab la-facebook icon-footer"></i>
                 </a></li>
-            </ul>
-        </footer>
-    </div>
+        </ul>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
