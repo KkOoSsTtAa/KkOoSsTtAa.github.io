@@ -50,6 +50,11 @@ green rgba(153, 255, 3, 255);
 .logo {
   width: 60px;
   border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .links {
@@ -72,6 +77,11 @@ green rgba(153, 255, 3, 255);
 
 .burger-menu img {
   width: 70px;
+  transition: all 0.3s ease;
+}
+
+.burger-menu img:hover {
+  transform: scale(1.1);
 }
 
 .nav-mobile {

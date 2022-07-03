@@ -3,7 +3,7 @@ const krilca = document.getElementById("krilca");
 const piletina = document.getElementById("piletina");
 const slatkisi = document.getElementById("slatkisi");
 const burgerMenu = document.querySelector(".burger-menu");
-const header = document.getElementById("header");
+const header = document.getElementById("headerJS");
 
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("poruci");
