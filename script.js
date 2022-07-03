@@ -56,25 +56,24 @@ document.addEventListener("click", (e) => {
 });
 
 document.addEventListener("scroll", (e) => {
-  let scroll = window.scrollY;
+  const scroll = window.scrollY;
   if (scroll > 800) {
-    header.classList.add('sticky');
+    header.classList.add("sticky");
   } else {
-    header.classList.remove('sticky');
+    header.classList.remove("sticky");
   }
 });
 
-btn.addEventListener('click', (e) => {
+btn.addEventListener("click", (e) => {
   modal.style.display = "block";
-})
+});
 
-span.addEventListener('click', (e) => {
+span.addEventListener("click", (e) => {
   modal.style.display = "none";
+});
 
-})
-
-window.addEventListener('click', (e) => {
-  if (event.target == modal) {
+window.addEventListener("click", (e) => {
+  if (e.target == modal) {
     modal.style.display = "none";
   }
-})
+});
